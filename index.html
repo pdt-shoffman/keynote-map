@@ -6,25 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Log In</title>
-	<link href="bootstrap.min.css" rel="stylesheet">
+	<title>Traffic</title>
 	<link href="signin.css" rel="stylesheet">
 </head>
 
-<body class="text-center">
-	<div class="container-fluid" style="padding-top: 20px;">
-		<div id="alert-container"></div>
-		<div class="map">
-			<div id="regions_div" style="width: 600px; height: 370px;"></div>
-		</div>
+<body>
+	<div>
+		<button type="button" id="traffic_view">Traffic</button>
+		<button type="button" id="latency_view">Latency</button>
+		<div id="map_div" style="width: 600px; height: 370px;"></div>
 	</div>
 
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="bootstrap.min.js"></script>
 	<script src="signin.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="maps.js"></script>
 	<script type="text/javascript">
-		 google.charts.load('current', {
+
+		google.charts.load('current', {
         'packages':['geochart'],
         // Note: you will need to get a mapsApiKey for your project.
         // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
@@ -46,13 +46,14 @@
 
         var options = {};
 
-        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+        var chart = new google.visualization.GeoChart(document.getElementById('map_div'));
 
         chart.draw(data, options);
       }
 
+
 	</script>
-<!-- 	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script> -->
+
 </body>
 
 </html>
