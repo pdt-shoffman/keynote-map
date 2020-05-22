@@ -11,10 +11,10 @@
 </head>
 
 <body>
-	<div>
+	<div style = "width:310px">
 		<button type="button" id="traffic_view">Traffic</button>
 		<button type="button" id="latency_view">Latency</button>
-		<div id="map_div" style="width: 600px; height: 370px;"></div>
+		<div id="map_div" style="width: 410px; height: 250px;"></div>
 	</div>
 
 	<script src="jquery-3.3.1.min.js"></script>
@@ -35,13 +35,17 @@
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
           ['Country', 'RPM'],
-          ['Germany', 200],
-          ['United States', 300],
-          ['Brazil', 400],
-          ['Canada', 500],
+          ['Germany', 1400],
+          ['United States', 7000],
+          ['Brazil', 600],
+          ['Canada', 3000],
           ['France', 600],
-          ['RU', 700],
-          ['Japan', 1000]
+          ['RU', 30],
+          ['Japan', 5000],
+          ['United Kingdom', 4300],
+          ['Australia', 1700],
+          ['New Zealand', 500],
+          ['Spain', 20]
         ]);
 
         var options = {};

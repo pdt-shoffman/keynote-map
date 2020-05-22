@@ -18,14 +18,18 @@ $('#latency_view').on('click', function() {
 
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
-          ['Country', 'RPM'],
-          ['Germany', 200],
-          ['United States', 300],
-          ['Brazil', 400],
-          ['Canada', 500],
-          ['France', 600],
-          ['RU', 700],
-          ['Japan', 1000]
+          ['Country', 'Avg latency (ms)'],
+          ['Germany', 300],
+          ['United States', 100],
+          ['Brazil', 1200],
+          ['Canada', 100],
+          ['France', 140],
+          ['RU', 500],
+          ['Japan', 3000],
+          ['United Kingdom', 200],
+          ['Australia', 1700],
+          ['New Zealand', 2000],
+          ['Spain', 300]
         ]);
 
         var options = {};
@@ -50,13 +54,17 @@ $('#latency_view').on('click', function() {
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
           ['Country', 'RPM'],
-          ['Germany', 600],
-          ['United States', 10],
-          ['Brazil', 4000],
-          ['Canada', 20],
-          ['France', 8000],
-          ['RU', 0],
-          ['Japan', 20]
+          ['Germany', 1400],
+          ['United States', 7000],
+          ['Brazil', 600],
+          ['Canada', 3000],
+          ['France', 600],
+          ['RU', 30],
+          ['Japan', 5000],
+          ['United Kingdom', 4300],
+          ['Australia', 1700],
+          ['New Zealand', 500],
+          ['Spain', 20]
         ]);
 
         var options = {};
